@@ -1,0 +1,13 @@
+flask
+lxml
+PyMySQL
+flask
+Flask-MySQL
+flask-mysql
+Flask-Cors
+PyPDF2
+PyJWT
+jwt
+pycrypto
+pycryptodome
+crypto
