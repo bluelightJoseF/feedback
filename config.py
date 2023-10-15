@@ -1,11 +1,12 @@
 from app import app
 from flaskext.mysql import MySQL
 mysql=MySQL()
-SECRET_KEY=b'secret'#key_temporal
+SECRET_KEY=b'REDACTED'#key_temporal#CHANGETHIS
+SALT='0a2QzbjQK0'
 app.config['MYSQL_DATABASE_USER'] = 'db_admin'
-app.config['MYSQL_DATABASE_PASSWORD'] = 'secret'
+app.config['MYSQL_DATABASE_PASSWORD'] = 'REDACTED'#CHANGETHIS
 app.config['MYSQL_DATABASE_DB'] = 'mydb'
-app.config['MYSQL_DATABASE_HOST'] = 'db:33066'
+app.config['MYSQL_DATABASE_HOST'] = 'admin.bluelightconsulting.tech:330666'
 mysql.init_app(app)
 
 app.config['CORS_HEADERS'] = "Content-Type"
